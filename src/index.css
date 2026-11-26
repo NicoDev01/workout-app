@@ -154,3 +154,17 @@
 
 @keyframes pose-a { 0%, 40% { opacity: 1 } 50%, 90% { opacity: 0 } 100% { opacity: 1 } }
 .pose-loop { animation: pose-a 2s ease-in-out infinite; }
+
+/* Dezente, kontrastreiche Scrollbar nur in der eingebetteten Desktop-Demo */
+html.demo-embed {
+  --demo-sb-thumb: #78716c;
+  --demo-sb-track: #f5f5f4;
+  scrollbar-width: thin;
+  scrollbar-color: var(--demo-sb-thumb) var(--demo-sb-track);
+}
+@supports not (scrollbar-color: auto) {
+  html.demo-embed { scrollbar-width: auto; }
+  html.demo-embed::-webkit-scrollbar { width: 6px; height: 6px; }
+  html.demo-embed::-webkit-scrollbar-thumb { background: var(--demo-sb-thumb); border-radius: 999px; }
+  html.demo-embed::-webkit-scrollbar-track { background: var(--demo-sb-track); }
+}

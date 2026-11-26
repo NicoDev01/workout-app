@@ -46,7 +46,7 @@ Viele Fitness-Apps überladen Nutzer mit Konfigurationsmenüs, Social-Feeds, Clo
 
 Die App kennt den Trainingsplan, berechnet Gewichte, Wiederholungen, Volumen und Entlastungswochen automatisch aus den eigenen Trainingsdaten und läuft **100 % lokal auf dem Gerät** (IndexedDB via Dexie) – als Web-App im Browser genauso wie als native Android-App mit Hintergrund-Pausen-Timer und Haptik via Capacitor.
 
-> **Hinweis zu den Screenshots:** Alle Vorschaubilder zeigen die echte App im Mobile-Viewport (`390×844`) mit synthetischen Beispieldaten.
+> **Interaktive Live-Demo:** Die [Web-Demo](https://nicodev01.github.io/workout-app/) öffnet sich auf dem Desktop direkt in einem interaktiven Smartphone-Mockup mit vorbefüllten Beispieldaten (jederzeit neu ladbar oder leer zurücksetzbar). Im regulären App- und Android-APK-Build wird der Demo-Modus nicht mitgebündelt.
 
 ---
 
